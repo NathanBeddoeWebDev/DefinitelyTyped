@@ -464,6 +464,7 @@ export interface Alpine {
      * @returns Object
      */
     $data: (node: ElementWithXAttributes) => {};
+    watch: (getter: () => unknown, callback: () => void) => void;
     walk: (el: ElementWithXAttributes, callback: WalkerCallback) => any;
     /**
      * Registers a component constructor a name referenceable inside `x-data` expressions
